@@ -16,6 +16,6 @@ In order to use the module, adjust the data saved in [portfolio.csv](/src/portfo
 
 Due to the discrete nature of shares, rebalancing must be done in integers, however, this eliminates the possibility of a truly optimal rebalancing. This module attempts to mitigate the risk of this through excess cash allocation however it does not guarentee a truly optimal allocation. 
 
-In order to minimize the total distance from the target allocation, an non-linear integer optimization could be applied. In a production environment, however, this calculation would take too long to apply to many portfolios, possibly taking up to a minute per portfolio in order to be sure the allocation is close to optimal.
+In order to minimize the total distance from the target allocation, a non-linear integer optimization could be applied. In a production environment, however, this calculation would take too long to apply to many portfolios, possibly taking up to a minute per portfolio in order to be sure the allocation is close to optimal.
 
-An [Excel Solver model](/PortfolioRebalance.xlsx) can be found in this repo that performs this optimization. Solver must be set to perform an integer optimization and it's best to reset the `New Shares` fields to `0` in order to eliminate bias from the non-linear solver.
+An [Excel Solver model](/PortfolioRebalance.xlsx) can be found in this repo that performs this optimization. Solver must be set to perform an integer optimization and it's best to reset the `New Shares` fields to `0` in order to eliminate bias from the non-linear solver. It would be possible to recreate the same model using quadratic programming, however, the decreased performance at scale would make it an ineffective method.
