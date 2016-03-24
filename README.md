@@ -10,7 +10,7 @@ In order to act on opportunities where excess cash is available after a floor re
 
 ## Use
 
-In order to use the module, adjust the data saved in [portfolio.csv](/src/portflio.csv) to reflect the target portfolio. Then open the module using any Java IDE (ie. Eclipse), build the project and run. After making any changes to the portfolio, re-run the module in order to view a new rebalancing strategy.
+In order to use the module, adjust the data saved in [portfolio.csv](/src/portfolio.csv) to reflect the target portfolio. Then open the module using any Java IDE (ie. Eclipse), build the project and run. After making any changes to the portfolio, re-run the module in order to view a new rebalancing strategy.
 
 ## Trade-Offs
 
